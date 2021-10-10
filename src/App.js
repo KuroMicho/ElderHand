@@ -38,17 +38,20 @@ function App() {
   return (
     <div className="App">
       <Switch>
-        <Route exact path="/clases">
-          {user ? <Clases /> : <Redirect to="/register" />}
+        <Route exact path="/register/:step">
+          <SignUp />
         </Route>
-        <Route exact path="/comunidades">
-          {user ? <Comunidades /> : <Redirect to="/register" />}
+        <Route exact path="/register">
+          <Redirect to="/register/1" />
         </Route>
         <Route exact path="/comunidades/arte">
           <Contenido />
         </Route>
-        <Route exact path="/register">
-          <SignUp />
+        <Route exact path="/clases">
+          {user ? <Clases /> : <Redirect to="/register/1" />}
+        </Route>
+        <Route exact path="/comunidades">
+          {user ? <Comunidades /> : <Redirect to="/register/1" />}
         </Route>
         <Route exact path="/login">
           <SignIn />

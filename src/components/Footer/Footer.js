@@ -15,7 +15,7 @@ const Footer = () => {
     <FooterContainer>
       <List>
         <ListItem>
-          <ItemLink>¡Ayuda a nuestros viejitos!</ItemLink>
+          <ItemLink>¡Ayuda a nuestros mayores!</ItemLink>
         </ListItem>
         <ListItem>
           <ItemLink>Preguntas frecuentes</ItemLink>

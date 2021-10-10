@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import Post from "../components/PostClassOrCommunity/Post";
 import { PostContainer } from "../components/PostClassOrCommunity/style";
 import post1 from "../assets/img/post1.jpg";
-import { useSelector } from "react-redux";
-import { selectUser } from "../app/userSlice";
 import ModalVideo from "../components/ModalVideo/ModalVideo";
 
 const Clases = () => {
@@ -25,7 +23,7 @@ const Clases = () => {
 
       setClase([
         ...clase,
-        { id: Date.now(), url: keyUrl, title: title, desc: desc },
+        { id: String(+Date.now()), url: keyUrl, title: title, desc: desc },
       ]);
     }
   };
@@ -58,7 +56,7 @@ const Clases = () => {
         </form>
         <span>
           {clase.map((cls) => (
-            <Post title={cls.title} desc={cls.desc} image={post1}>
+            <Post key={cls.id} title={cls.title} desc={cls.desc} image={post1}>
               <button onClick={handleShow}>
                 Pulsa aqui para ver la clase.
               </button>

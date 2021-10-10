@@ -42,12 +42,17 @@ export const List = styled.ul`
 export const ListItem = styled.li`
   margin: 1em;
   padding: 0;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const ItemLink = styled.a`
   font-size: 14pt;
   margin: 0;
   padding: 0;
+  cursor: pointer;
 `;
 
 export const Copy = styled.p`

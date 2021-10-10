@@ -5,9 +5,7 @@ import { Provider } from "react-redux";
 
 import NavBar from "./components/Nav/NavBar";
 import Footer from "./components/Footer/Footer";
-import NavOptions from "./components/NavOptions/NavOptions";
-
-import avatar from "./assets/img/photoUser.png";
+import avatar from "./assets/img/Abuelito.png";
 
 import { BrowserRouter as Router } from "react-router-dom";
 import App from "./App";
@@ -18,7 +16,6 @@ ReactDOM.render(
     <Provider store={store}>
       <Router>
         <NavBar avatar={avatar} />
-        <NavOptions />
         <App />
       </Router>
       <Footer />

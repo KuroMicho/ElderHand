@@ -51,7 +51,7 @@ const NavBar = ({ avatar }) => {
           <Profile src={user ? user.photoURL : avatar} />
         </ListItem>
         <ListItem>
-          <ItemLink onClick={handleLogout}>Salir</ItemLink>
+          {user && <ItemLink onClick={handleLogout}>Salir</ItemLink>}
         </ListItem>
       </List>
     </Nav>

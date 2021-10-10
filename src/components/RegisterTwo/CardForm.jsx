@@ -4,12 +4,11 @@ import { BtnSubmit, Field, Form, Label, TextForm, Arrow } from "./style";
 import arrow from "../../assets/img/Arrow.png";
 import { auth, provider } from "../../firebase.js";
 import styled from "styled-components";
-import { Link, Route, useHistory } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import mano from "../../assets/img/mano.png";
 
 const CardForm = ({ labelText, placeHolder }) => {
   const history = useHistory();
-  // const match = useRouteMatch();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -49,33 +48,17 @@ const CardForm = ({ labelText, placeHolder }) => {
   return (
     <Container>
       <Form onSubmit={handleRegister}>
-        <Route path="/register/1">
-          <Label>
-            <TextForm>{labelText}</TextForm>
-            <Arrow src={arrow} />
-            <Field
-              type="text"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder={placeHolder}
-            />
-          </Label>
-        </Route>
-        <Route path="/register/2">
-          <Label>
-            <TextForm>Ingresa tu contrasena</TextForm>
-            <Arrow src={arrow} />
-            <Field
-              type="text"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              placeholder="Aqui contrasena..."
-            />
-          </Label>
-        </Route>
-        <Link to="/register/2">
-          <BtnSubmit>Continuar</BtnSubmit>
-        </Link>
+        <Label>
+          <TextForm>Ingresa tu contrasena</TextForm>
+          <Arrow src={arrow} />
+          <Field
+            type="text"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            placeholder="Aqui contrasena..."
+          />
+        </Label>
+        <BtnSubmit>Continuar</BtnSubmit>
         <LoginAccount>
           <p>Ya tienes cuenta pulsa aqui:</p>
           <Link to="/login">Iniciar Sesion con mi Cuenta</Link>
