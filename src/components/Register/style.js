@@ -1,15 +1,14 @@
 import styled from "styled-components";
 
-export const Form = styled.div`
+export const Form = styled.form`
   width: 50vw;
-  height: 50vh;
   display: flex;
+  padding: 20px 10px;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   background-color: white;
-  box-shadow: 0 0 10px 0 rgba(0,0,0,.25);
-  margin: 0 auto;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
 `;
 
 export const Label = styled.label`
@@ -25,8 +24,8 @@ export const TextForm = styled.p`
 `;
 
 export const Arrow = styled.img`
-  width:50px;
-  margin: .25em auto .25em auto;
+  width: 50px;
+  margin: 0.25em auto 0.25em auto;
 `;
 export const Field = styled.input`
   padding: 1em;
@@ -43,9 +42,10 @@ export const BtnSubmit = styled.button`
   background-color: #b885e5;
   color: white;
   padding: 1em 1.5em 1em 1.5em;
-  margin: .5em 0 0 0 ;
+  margin: 0.5em 0 0 0;
   border: 3px solid #8134c3;
   border-radius: 30px;
   box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.25);
   font-size: 12pt;
+  cursor: pointer;
 `;

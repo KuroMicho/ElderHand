@@ -9,15 +9,16 @@ import {
   Img,
 } from "./style";
 
-const Post = ({ title, desc, image}) => {
+const Post = ({ title, desc, image, children }) => {
   return (
-      <Posted>
-        <Img src={image}/>
-        <ContainerDesc>
-          <Title>{title}</Title>
-          <Descripcion>{desc}</Descripcion>
-        </ContainerDesc>
-      </Posted>
+    <Posted>
+      <Img src={image} />
+      <ContainerDesc>
+        <Title>{title}</Title>
+        <Descripcion>{desc}</Descripcion>
+        {children}
+      </ContainerDesc>
+    </Posted>
   );
 };
 
