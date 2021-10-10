@@ -4,7 +4,7 @@ export const FooterContainer = styled.footer`
   width: 99vw;
   height: 50px;
   position: sticky;
-  bottom: 0;
+  bottom: -100%;
   display: flex;
   background-color: #204d92;
   color: white;

@@ -6,43 +6,17 @@ import { Provider } from "react-redux";
 
 import NavBar from "./components/Nav/NavBar";
 import Footer from "./components/Footer/Footer";
-import NavOptions from "./components/NavOptions/NavOptions";
-import Post from "./components/PostClassOrCommunity/Post";
+
 
 import photoUser from "./assets/img/photoUser.png";
-import post1 from "./assets/img/post1.jpg";
-import { PostContainer } from "./components/PostClassOrCommunity/style";
+import PostForm from "./components/PostClassOrCommunity/PostForm/PostForm";
+
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
       <NavBar photoUser={photoUser} />
-      <NavOptions />
-      <PostContainer>
-        <Post
-          title="Post Class #1"
-          desc="Esta es una clase que trata de cosas de la vida porque asi es la vida cuando es la vida de la vida vamos a por todas"
-          image={post1}
-        /> <Post
-          title="Post Class #1"
-          desc="Esta es una clase que trata de cosas de la vida porque asi es la vida cuando es la vida de la vida vamos a por todas"
-          image={post1}
-        /> <Post
-          title="Post Class #1"
-          desc="Esta es una clase que trata de cosas de la vida porque asi es la vida cuando es la vida de la vida vamos a por todas"
-          image={post1}
-        />
-        <Post
-          title="Post Class #1"
-          desc="Esta es una clase que trata de cosas de la vida porque asi es la vida cuando es la vida de la vida vamos a por todas"
-          image={post1}
-        />
-        <Post
-          title="Post Class #1"
-          desc="Esta es una clase que trata de cosas de la vida porque asi es la vida cuando es la vida de la vida vamos a por todas"
-          image={post1}
-        />
-      </PostContainer>
+        <PostForm/>
       <Footer />
     </Provider>
   </React.StrictMode>,

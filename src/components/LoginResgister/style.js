@@ -9,6 +9,7 @@ export const Form = styled.div`
   align-items: center;
   background-color: white;
   box-shadow: 0 0 10px 0 rgba(0,0,0,.25);
+  margin: 0 auto;
 `;
 
 export const Label = styled.label`

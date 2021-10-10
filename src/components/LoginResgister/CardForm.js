@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import {  Container } from '../CardArchectype/style'
+
 import { BtnSubmit, Field, Form, Label, TextForm, Arrow } from './style'
 import arrow from '../../assets/img/Arrow.png'
 
@@ -12,7 +12,7 @@ const CardForm = ({labelText, placeHolder}) => {
     }
 
     return (
-        <Container>
+
             <Form>
                 <Label>
                     <TextForm>{labelText}</TextForm>
@@ -23,7 +23,7 @@ const CardForm = ({labelText, placeHolder}) => {
                     Continuar
                 </BtnSubmit>
             </Form>  
-        </Container>
+
     )
 }
 
