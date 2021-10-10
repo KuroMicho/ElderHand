@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const FooterContainer = styled.footer`
-  width: 99vw;
+  width: 100%;
   height: 50px;
   position: sticky;
   bottom: 0;
@@ -20,13 +20,13 @@ export const LogoContainer = styled.div`
 `;
 
 export const Logo = styled.img`
-    width:70px;
+  width: 70px;
 `;
 
 export const ElderHandText = styled.h3`
-  font-size: 18pt;
+  font-size: 14px;
   margin: 0;
-    padding: 0;
+  padding: 0;
 `;
 
 export const List = styled.ul`
@@ -35,19 +35,19 @@ export const List = styled.ul`
   justify-content: center;
   align-items: center;
   margin: 0;
-    padding: 0;
+  padding: 0;
   list-style: none;
 `;
 
 export const ListItem = styled.li`
   margin: 1em;
-    padding: 0;
+  padding: 0;
 `;
 
 export const ItemLink = styled.a`
-    font-size: 14pt;
-    margin: 0;
-    padding: 0;
+  font-size: 14pt;
+  margin: 0;
+  padding: 0;
 `;
 
 export const Copy = styled.p`

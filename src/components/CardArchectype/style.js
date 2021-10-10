@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const Container = styled.section`
   width: 100vw;
-  height: 100vh;
+  overflow: hidden;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,9 +30,9 @@ export const CardStyle = styled.article`
 `;
 
 export const Icon = styled.img`
-  margin:1em;
-  width: ${({widthImg})=>widthImg} ;
-  height:  ${({heightImg})=>heightImg};
+  margin: 1em;
+  width: ${({ widthImg }) => widthImg};
+  height: ${({ heightImg }) => heightImg};
 `;
 
 export const User = styled.h2`
@@ -53,12 +54,12 @@ export const List = styled.ul`
 export const ItemList = styled.li``;
 
 export const BtnContinue = styled.button`
-    position: absolute;
-    bottom: 120px;
-    background-color: #B885E5;
-    color:white;
-    padding: 1em 1.5em 1em 1.5em;
-    border: 3px solid #8134C3;
-    border-radius: 30px;
-    box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.25);
+  position: absolute;
+  bottom: 120px;
+  background-color: #b885e5;
+  color: white;
+  padding: 1em 1.5em 1em 1.5em;
+  border: 3px solid #8134c3;
+  border-radius: 30px;
+  box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.25);
 `;
