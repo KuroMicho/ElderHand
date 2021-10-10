@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
-import { BtnContinue, Container } from '../CardArchectype/style'
-import { Field, Form, Label, TextForm } from './style'
+import {  Container } from '../CardArchectype/style'
+import { BtnSubmit, Field, Form, Label, TextForm, Arrow } from './style'
+import arrow from '../../assets/img/Arrow.png'
 
 const CardForm = ({labelText, placeHolder}) => {
 
@@ -14,13 +15,13 @@ const CardForm = ({labelText, placeHolder}) => {
         <Container>
             <Form>
                 <Label>
-                    <TextForm>Ingresa tu {labelText} en el siguiente campo</TextForm>
-
+                    <TextForm>{labelText}</TextForm>
+                    <Arrow src={arrow}/>
                     <Field type="text"value={field}  onChange={handleChange} placeholder={placeHolder} />    
                 </Label>
-                <BtnContinue>
+                <BtnSubmit>
                     Continuar
-                </BtnContinue>
+                </BtnSubmit>
             </Form>  
         </Container>
     )
